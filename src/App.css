@@ -1,7 +1,5 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  width: 100%;
   text-align: center;
 }
 
@@ -48,7 +46,7 @@
 
 .gs-symbolizer-previewmap {
   width: -webkit-fill-available;
-  height: 85vh!important;
+  height: 100vh!important;
 }
 
 .gs-rule .gs-rule-fields {
