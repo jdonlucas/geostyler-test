@@ -1,0 +1,94 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
+.styler-container {
+  display: flex;
+}
+
+.gs-symbolizer-previewmap {
+  width: -webkit-fill-available;
+  height: 85vh!important;
+}
+
+.gs-rule .gs-rule-fields {
+  display: block!important;
+}
+.ant-table-content {
+  max-height: 80vh;
+  overflow: auto;
+}
+
+.save-style {
+  background: var(--color-gestion);
+  filter: opacity(0.5);
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.save-style > button {    
+  margin: 0.5em;
+  margin-top: 0;
+  margin-bottom: 0;
+  background: var(--color-gestion);
+  color: white;
+  border-color: white;
+  border-radius: 4px;
+  padding: 0.3em;
+}
+
+.gs-style {
+  padding-top: 2em;
+}
+
+.link-back {
+  padding-left: 1em;
+  display: block;
+  color: white;
+  font-weight: 700;
+}
+.save-style-btn {
+  display: block;
+}
