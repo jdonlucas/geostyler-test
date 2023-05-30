@@ -3,11 +3,20 @@ import { PreviewMap, Style } from 'geostyler';
 import SLDParser from 'geostyler-sld-parser';
 import WfsParser from 'geostyler-wfs-parser';
 
+import proj4 from 'proj4';
+import {register} from 'ol/proj/proj4.js';
+
 import './App.css';
 import 'antd/dist/antd.css';
 
 
 const wfsParser = new WfsParser();
+
+// added missing projection
+// obtained from: https://epsg.io/32614
+proj4.defs("EPSG:32614","+proj=utm +zone=14 +datum=WGS84 +units=m +no_defs +type=crs");
+
+register(proj4);
 
 const App = () => {
 
